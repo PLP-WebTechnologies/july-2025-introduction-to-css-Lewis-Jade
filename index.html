@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <header>
+    <h1>Welcome to My HTML5 Showcase</h1>
+    <p>This page demonstrates structured content using lists, tables, media, and a validated HTML5 form.</p>
+  </header>
+
+  <section>
+    <h2>🔹 My Top 3 Learning Goals</h2>
+    <ol>
+      <li>Master front-end development (HTML, CSS, JavaScript)</li>
+      <li>Explore cybersecurity and ethical hacking</li>
+      <li>Build real-world web applications</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>🔸 Skills Summary Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Proficiency</th>
+          <th>Years of Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML & CSS</td>
+          <td>Advanced</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>PHP & MySQL</td>
+          <td>Intermediate</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Content</h2>
+    <figure>
+      <img src="fratanity.webp" alt="Sample placeholder" width="100%" />
+      <figcaption>A sample image representing one of my web projects.</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="mini_ctf.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video width="100%" controls>
+      <source src="astronaut-sitting-on-rock.1920x1080.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2> Registration Form</h2>
+    <form action="#" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Personal Info</legend>
+        
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Lewis Mudaida" required minlength="3" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="e.g. example@gmail.com" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" placeholder="e.g. 0712345678" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+        
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required pattern="^[a-zA-Z0-9_]{5,}$" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters" />
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="role">Choose Your Role</label>
+        <select name="role" id="role" required>
+          <option value="">--Select--</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="developer">Developer</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." maxlength="300"></textarea>
+
+        <label>
+          <input type="checkbox" name="agree" required />
+          I agree to the <a href="#">terms and conditions</a>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <input type="reset" value="Reset" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lewis Mudaida | HTML5 Assignment Submission</p>
+  </footer>
+
+</body>
+</html>
